@@ -1,64 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandeep | Resume</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-            background: #f9f9f9;
-        }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        .section {
-            margin-bottom: 25px;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sandeep | ML Engineer</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: #020617;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #38bdf8;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+.hero p {
+    color: #94a3b8;
+}
+
+.buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 18px;
+    border-radius: 6px;
+    background: #38bdf8;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    margin-top: 50px;
+}
+
+.section h2 {
+    border-bottom: 2px solid #38bdf8;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #020617;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+footer {
+    text-align: center;
+    margin: 50px 0;
+    color: #64748b;
+}
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <h1>Sandeep</h1>
-        <p>Email: sandeep.pslr@email.com | GitHub: github.com/sandeep-pusuluri</p>
 
-        <div class="section">
-            <h2>Summary</h2>
-            <p>A motivated developer with experience in machine learning and software development.</p>
-        </div>
+<header>
+    <div><strong>Sandeep</strong></div>
+    <div>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</header>
 
-        <div class="section">
-            <h2>Skills</h2>
-            <p>Python, Machine Learning, SQL, Git, Data Analysis</p>
-        </div>
+<div class="container">
 
-        <div class="section">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Helmet Detection Model</strong> – Computer vision project using deep learning.</li>
-                <li><strong>Medical Assistant AI</strong> – RAG-based chatbot using LLMs.</li>
-            </ul>
-        </div>
+    <div class="hero">
+        <h1>Hi, I'm Sandeep 👋</h1>
+        <p>Machine Learning Developer | Building AI-powered applications</p>
 
-        <div class="section">
-            <h2>Education</h2>
-            <p> BTech, IIT kanpur</p>
-            <p> MTech, IIT Madras</p>
+        <div class="buttons">
+            <a href="#">Resume PDF</a>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
         </div>
     </div>
+
+    <div class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="cards">
+
+        <div class="card">
+            <h3>Helmet Detection System</h3>
+            <p>
+                Developed a computer vision model to detect helmet usage using deep learning techniques.
+                Implemented image preprocessing and trained models for real-time safety monitoring.
+            </p>
+            <p><strong>Tech:</strong> Python, OpenCV, Deep Learning</p>
+        </div>
+
+        <div class="card">
+            <h3>Superkart Sales Analysis</h3>
+            <p>
+                Performed exploratory data analysis on retail sales data to identify trends,
+                customer behavior, and business insights for decision-making.
+            </p>
+            <p><strong>Tech:</strong> Python, Pandas, Data Visualization</p>
+        </div>
+
+        <div class="card">
+            <h3>Job Change Prediction</h3>
+            <p>
+                Built a machine learning model to predict whether an employee will change jobs
+                based on demographic and professional features.
+            </p>
+            <p><strong>Tech:</strong> Python, Scikit-learn, Classification</p>
+        </div>
+
+        <div class="card">
+            <h3>Visa Approval Prediction</h3>
+            <p>
+                Developed a predictive model to determine visa approval likelihood
+                using historical applicant data and classification algorithms.
+            </p>
+            <p><strong>Tech:</strong> Python, Machine Learning</p>
+        </div>
+
+        <div class="card">
+            <h3>Subscription Renewal Prediction</h3>
+            <p>
+                Built a model to predict customer renewal behavior,
+                helping businesses improve retention strategies.
+            </p>
+            <p><strong>Tech:</strong> Python, ML Models</p>
+        </div>
+
+    </div>
+</div>
+
+    <div class="section" id="skills">
+        <h2>Skills</h2>
+        <p>Python • Machine Learning • SQL • Deep Learning • NLP</p>
+    </div>
+
+    <div class="section" id="contact">
+        <h2>Contact</h2>
+        <p>Email: sandeep.pslr@gmail.com</p>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Sandeep
+</footer>
+
 </body>
 </html>
